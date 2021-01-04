@@ -8,3 +8,8 @@ func queueFunc(_ ms: Int, toRun: @escaping() -> Void) {
         toRun()
     }
 }
+
+// Generate a random integer in the given range.
+func randInt(min: Int, max: Int) {
+    return Int.random(in: min...max)
+}
