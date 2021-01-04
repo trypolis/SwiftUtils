@@ -10,6 +10,6 @@ func queueFunc(_ ms: Int, toRun: @escaping() -> Void) {
 }
 
 // Generate a random integer in the given range.
-func randInt(min: Int, max: Int) {
+func randInt(min: Int, max: Int) -> Int {
     return Int.random(in: min...max)
 }
