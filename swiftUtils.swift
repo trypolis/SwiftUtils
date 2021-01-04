@@ -1,4 +1,8 @@
-// Random functions that don't need their own module.
+// SwiftUtils.
+// Huge amounts of Swift functions.
+//
+// Copyright (C) 2020-2021, Ty Gillespie. All rights reserved.
+// MIT License.
 
 import Foundation
 
@@ -11,6 +15,7 @@ func queueFunc(_ ms: Int, toRun: @escaping() -> Void) {
 
 // Generate a random integer in the given range.
 func randInt(min: Int, max: Int) -> Int {
+    // Todo: add the ability to say if max should be inclusive.
     return Int.random(in: min...max)
 }
 
