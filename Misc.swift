@@ -13,3 +13,8 @@ func queueFunc(_ ms: Int, toRun: @escaping() -> Void) {
 func randInt(min: Int, max: Int) -> Int {
     return Int.random(in: min...max)
 }
+
+// Returns the number squared.
+func getSquare(number: Int) -> Int {
+    return number * number
+}
