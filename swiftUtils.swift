@@ -14,7 +14,7 @@ func queueFunc(_ ms: Int, toRun: @escaping() -> Void) {
 }
 
 // Generate a random integer in the given range.
-func randInt(min: Int, max: Int) -> Int {
+func randInt(_ min: Int, _ max: Int) -> Int {
     // Todo: add the ability to say if max should be inclusive.
     return Int.random(in: min...max)
 }
