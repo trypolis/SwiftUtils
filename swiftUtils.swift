@@ -14,9 +14,12 @@ func queueFunc(_ ms: Int, toRun: @escaping() -> Void) {
 }
 
 // Generate a random integer in the given range.
-func randInt(_ min: Int, _ max: Int) -> Int {
-    // Todo: add the ability to say if max should be inclusive.
-    return Int.random(in: min...max)
+func randInt(_ min: Int, _ max: Int, inclusive: Bool = true) -> Int {
+    if inclusive {
+        return Int.random(in: min...max)
+    } else {
+                return Int.random(in: min..<max)
+            }
 }
 
 // Returns the number squared.
