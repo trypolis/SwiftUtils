@@ -3,7 +3,7 @@
 //
 // Copyright (C) 2020-2021, Ty Gillespie. All rights reserved.
 // MIT License.
-
+®
 import Foundation
 
 // Queue a function to run the given time after this function is called.
